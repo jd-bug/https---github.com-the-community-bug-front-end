@@ -1,0 +1,111 @@
+/* Colour Variables */
+$northBlue : #4ea5ff;
+$southRed : #ff3737;
+$southRedDarker : #db1d1d;
+
+/* Fonts */
+@font-face {
+  font-family: 'TeXGyreAdventor';
+  src: url('../font/texgyreadventor-bold.eot'); /* IE9 Compat Modes */
+  src: url('../font/texgyreadventor-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/texgyreadventor-bold.woff') format('woff'), /* Modern Browsers */
+       url('../font/texgyreadventor-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../font/texgyreadventor-bold.svg#410bc7c0a96055f314865205a0a58b43') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+
+/* CSS */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+	width:100%;
+}
+
+article{
+	width:100%;
+	float:left;
+	margin:2em 0em;
+}
+
+.content{
+	width:100%;
+	min-height:100%;
+	padding:2em;
+	float:left;
+
+	.logo-container{
+		float: left;
+		width:100%;
+		margin:1em 0em;
+
+		img{
+			width:40%;
+			padding:0em 1em;
+
+			&.black{
+				background: #222;
+			}
+		}
+
+		span{
+			display: block;
+			font-weight: bold;
+			padding:0em 1em;
+		}
+	}
+
+	.block{
+		float: left;
+		margin-right:10px;
+		width:20%;
+		height:20vw;
+
+		.block-inner{
+			float: left;
+			width:100%;
+			height:100%;
+
+			&.red{
+				background: $southRed;
+			}
+
+			&.blue{
+				background: $northBlue;
+			}
+
+			&.white{
+				background:#fff;
+				border:1px solid #eee;
+			}
+
+			&.dark-red{
+				background:$southRedDarker;
+			}
+		}
+
+		span{
+			float: left;
+			width:100%;
+			padding:1em 0em;
+			font-weight: bold;
+		}
+	}
+
+	.typography{
+
+		p{
+			font-size:22px;
+			line-height: 28px;
+			font-family: "TeXGyreAdventor";
+		}
+	}
+}

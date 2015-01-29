@@ -1,0 +1,72 @@
+/* Colour Variables */
+/* Fonts */
+@font-face {
+  font-family: 'TeXGyreAdventor';
+  src: url("../font/texgyreadventor-bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/texgyreadventor-bold.eot?#iefix") format("embedded-opentype"), url("../font/texgyreadventor-bold.woff") format("woff"), url("../font/texgyreadventor-bold.ttf") format("truetype"), url("../font/texgyreadventor-bold.svg#410bc7c0a96055f314865205a0a58b43") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700; }
+/* CSS */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  width: 100%; }
+
+article {
+  width: 100%;
+  float: left;
+  margin: 2em 0em; }
+
+.content {
+  width: 100%;
+  min-height: 100%;
+  padding: 2em;
+  float: left; }
+  .content .logo-container {
+    float: left;
+    width: 100%;
+    margin: 1em 0em; }
+    .content .logo-container img {
+      width: 40%;
+      padding: 0em 1em; }
+      .content .logo-container img.black {
+        background: #222; }
+    .content .logo-container span {
+      display: block;
+      font-weight: bold;
+      padding: 0em 1em; }
+  .content .block {
+    float: left;
+    margin-right: 10px;
+    width: 20%;
+    height: 20vw; }
+    .content .block .block-inner {
+      float: left;
+      width: 100%;
+      height: 100%; }
+      .content .block .block-inner.red {
+        background: #ff3737; }
+      .content .block .block-inner.blue {
+        background: #4ea5ff; }
+      .content .block .block-inner.white {
+        background: #fff;
+        border: 1px solid #eee; }
+      .content .block .block-inner.dark-red {
+        background: #db1d1d; }
+    .content .block span {
+      float: left;
+      width: 100%;
+      padding: 1em 0em;
+      font-weight: bold; }
+  .content .typography p {
+    font-size: 22px;
+    line-height: 28px;
+    font-family: "TeXGyreAdventor"; }
+
+/*# sourceMappingURL=style.css.map */
